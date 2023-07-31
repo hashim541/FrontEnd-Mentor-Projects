@@ -4,7 +4,7 @@
         project code :
             https://github.com/hashim541/FrontEnd-Mentor-Projects/tree/main/Age-calculator-app
 
-        live site :
+        live-site :
             https://hashim541.github.io/FrontEnd-Mentor-Projects/Age-calculator-app
 
 2.  Article-preview-component
