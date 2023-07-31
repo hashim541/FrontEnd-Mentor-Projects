@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="opac"></div>
+  <header>
+    
+    <img src='./images/logo.svg'>
+    <nav>
+      <ul>
+        <li class="close-menu"><button class="close" onclick="closeMenu()"><img
+              src='./images/icon-close-menu.svg'></button></li>
+        <li class='features' onclick='features()'>
+          <div class='feat'>
+            <p>Feautures</p>
+            <img src='./images/icon-arrow-down.svg' class='down fimg'>
+          </div>
+          <div class='featu-div divs'>
+            <div class="todo-list dd">
+              <img src='./images/icon-todo.svg'>
+              <P>Todo List</P>
+            </div>
+            <div class="todo-list dd">
+              <img src='./images/icon-calendar.svg'>
+              <P>Calander</P>
+            </div>
+            <div class="todo-list dd">
+              <img src='./images/icon-reminders.svg'>
+              <P>Reminders</P>
+            </div>
+            <div class="todo-list dd">
+              <img src='./images/icon-planning.svg'>
+              <P>Planning</P>
+            </div>
+          </div>
+        </li>
+
+        <li class='company' onclick='company()'>
+          <div class='comp'>
+            <p>Company</p>
+            <img src='./images/icon-arrow-down.svg' class='down cimg'>
+          </div>
+          <div class="comp-div divs">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blogs</p>
+          </div>
+        </li>
+
+        <li>Courses</li>
+        <li>About</li>
+
+        <li>Login</li>
+        <li><button class='reg'>Register</button></li>
+
+      </ul>
+    </nav>
+    <button class='menu-btn' onclick='showMenu()'> <img src='./images/icon-menu.svg'></button>
+  </header>
+  <main>
+    <picture>
+      <source srcset="./images/image-hero-desktop.png" media="(width > 800px)">
+      <source srcset="./images/image-hero-mobile.png">
+      <img class="imgss" src="./images/image-hero-mobile.png" alt="Flowers">
+    </picture>
+    <div class="container">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <button class="learn">Learn more</button>
+      <div class="logos">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+  </main>
+  <!--Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes,
+  create team rituals, and watch productivity soar.
+
+  Learn more-->
+
+
+
+  <script src='./app.js'></script>
+</body>
+
+</html>

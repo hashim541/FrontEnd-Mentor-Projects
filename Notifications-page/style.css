@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+*{
+    margin:         0;
+    padding:        0;
+    font-family:    'Plus Jakarta Sans', sans-serif;
+}
+:root{
+    --White:                     hsl(0, 0%, 100%);
+    --Very-light-grayish-blue:   hsl(210, 60%, 98%);
+    --Light-grayish-blue-1:      hsl(211, 68%, 94%);
+    --Light-grayish-blue-2:      hsl(205, 33%, 90%);
+    --Grayish-blue:              hsl(219, 14%, 63%);
+    --Dark-grayish-blue:         hsl(219, 12%, 42%);
+    --Very-dark-blue:            hsl(224, 21%, 14%);
+    --Red:                       hsl(1, 90%, 64%);
+    --Blue:                      hsl(219, 85%, 26%);
+    --font-500:                    500;
+    --font-800:                    800;
+}
+body{
+    background-color:   var(--Very-light-grayish-blue);
+    min-height:         100vh;
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    padding:            50px 10px;
+}
+img{
+    width:              50px;
+    height:             50px;
+}
+
+p{
+    font-size:          16px;
+    color:              var(--Dark-grayish-blue);
+    line-height:        23px;
+}
+h2{
+    color:              var(--Very-dark-blue);
+    display:            flex;
+    align-items:        center;
+    gap:                15px;
+}
+.number{
+    height:             30px;
+    width:              30px;
+    background-color:   var(--Blue);
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    border-radius:      5px;
+}
+.number>p{
+    font-size:          20px;
+    font-weight:        var(--font-500);
+    color:              var(--White);
+}
+.reacted,.club{
+    font-weight:        var(--font-800);
+    color:              var(--Dark-grayish-blue);
+}
+.reacted:hover{
+    cursor:             pointer;
+    color:              var(--Blue);
+}
+.club{
+    color:              var(--Blue);
+}
+.club:hover{
+    cursor:             pointer;
+    color:              var(--Blue);
+}
+.name{
+    font-weight:        var(--font-800);
+    color:              var(--Very-dark-blue);
+}
+.name:hover{
+    cursor:             pointer;
+    color:              var(--Blue);
+}
+
+.mark-all:hover{
+    cursor:             pointer;
+    color:              var(--Blue);
+}
+.p-msg{
+    padding:            10px;
+    border:             1px solid var(--Grayish-blue);
+}
+.main-container{
+    max-width:          696px;
+    background-color:   var(--White);
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+    gap:                20px;
+    padding:            30px 0px;
+    box-shadow:         0px 5px 20px var(--Light-grayish-blue-1);
+}
+.notification-bar{
+    width:              90%;
+    display:            flex;
+    align-items:        center;
+    justify-content:    space-between;
+}
+.notification{
+    width:              90%;
+    display:            flex;
+    gap:                15px;
+    padding:            10px 10px;
+}
+.name-kind{
+    display:            flex;
+    flex-direction:     column;
+    gap:                8px;
+}
+.private-msg{
+    display:            flex;
+    flex-direction:     column;
+    gap:                15px;
+}
+.special:after{
+    content:            "";
+    min-width:          10px;
+    height:             10px;
+    display:            inline-block;
+    background:         var(--Red);
+    border-radius:      50%;
+    margin-left:        5px;
+}
+.unread{
+    background-color:   var(--Very-light-grayish-blue);
+}
+.notifications{
+    width:              90%;
+    display:            flex;
+    
+}
+.chess{
+    margin-top:         10px;
+}
+.special.without:after{
+    display:            inline;
+}
+.name-kind>p{
+    color: var(--Grayish-blue);
+}
+@media(max-width: 35em){
+    body{
+        padding:        0px;
+    }
+    .main-container{
+        height:         100%;
+        width:          100%;
+    }
+    h2{
+        font-size:      1rem;
+    }
+    .number>p{
+        font-size:      1rem;
+    }
+    p{
+        font-size:      14px;
+    }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+p,span{
+   color: hsl(0, 0%, 59%);
+}
+p{
+    font-size: 18px;
+}
+span{
+    font-weight: 100;
+}
+body{
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    overflow: hidden;
+}
+.imagess1,.imagess2{
+    width: 100%;
+    position: relative;
+}
+.imgs{
+    min-width: 450px;
+    max-width: 100%;
+    translate: -50% -50%;
+}
+.imgs1{
+    position:absolute;
+    top: 10%;
+    left: 35%;
+}
+.imgs2{
+    position: absolute;
+    top: 100% ;
+    left: 60%;
+
+}
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 377px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px hsl(185, 76%, 32%);
+}
+.background-img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.profile-img{
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute ;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image{
+    border-radius: 50%;
+}
+.main-content{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.name-age{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flp{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hr{
+    width: 80%;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:500px){
+    .main-container{
+        width: 40vh;
+    }
+    .imgs2{
+        width: 450px;
+        position: absolute;
+        top: 90% ;
+        left: 100%;
+    
+    }
+    .imgs1{
+        width: 450px;
+        position: absolute;
+        top: 20% ;
+    
+    }
+    .Profile-bacground-img{
+        overflow: hidden;
+        width: 100%;
+        border-top-right-radius: 10px;
+    }
+}

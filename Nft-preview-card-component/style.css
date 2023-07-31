@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+p{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+body{
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 75%;
+    width: 40vh;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.main-image{
+    width: 257px;
+    height: 257px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+.view{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main-image:hover .overlay {
+    opacity: .7;
+    background-color: hsl(178, 100%, 50%);
+    
+}
+
+.overlay:hover .view {
+    opacity: 1;
+}
+.equilibrium{
+
+    border-radius: 8px;
+    width: 100%;
+}
+.main-p{
+    width: 85%;
+}
+.inner-container,.inner1,.inner2{
+    display: flex;
+}
+.inner-container{
+    width: 85%;
+    justify-content: space-between;
+}
+.eth{
+    color:hsl(178, 100%, 50%) ;
+}
+.left{
+    color: hsl(215, 51%, 70%);
+}
+h2{
+    align-self: flex-start;
+    font-weight: 600;
+    margin-left: 7.5%;
+}
+h4{
+    margin-left: 10px;
+}
+hr{
+    width: 85%;
+    height: 1px;
+    color: hsl(215, 51%, 70%);
+    border-width: 0;
+}
+.profile{
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+.profile-img{
+    width: 20%;
+}
+.profile-text{
+    margin-left: 10px;
+}
+span{
+    font-weight: 400;
+}
+h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+span:hover{
+    color: hsl(178, 100%, 50%);
+}

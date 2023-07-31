@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="content">
+      <h2>Learn to code by <br> watching others</h2>
+      <p class="top-p">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="signup">
+      <div class="plan">
+        <p class="plan-p"><span class="try">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <div class="details">
+        <div class="First-Name input-div">
+          <input type="text" placeholder="First Name" class="fn inp" id="msg1">
+          <img class="error msg1" src="./images/icon-error.svg" alt="">
+          <p class="error-msg msg1">First Name cannot be empty</p>
+        </div>
+
+        <div class="Last-Name input-div">
+          <input type="text" placeholder="Last Name" class="ln inp" id="msg2">
+          <img class="error msg2" src="./images/icon-error.svg" alt="">
+          <p class="error-msg msg2">Last Name cannot be empty</p>
+        </div>
+        
+        <div class="E-mail input-div">
+          <input type="email" placeholder="Email Address" class="em inp" id="msg3">
+          <img class="error msg3" src="./images/icon-error.svg" alt="">
+          <p class="error-msg msg3">Looks like it is not an Email</p>
+        </div>
+
+        <div class="Password input-div">
+          <input type="password" placeholder="Password" class="pw inp" id="msg4">
+          <img class="error msg4" src="./images/icon-error.svg" alt="">
+          <p class="error-msg msg4">Password cannot be empty</p>
+        </div>
+
+        <button class="btn">CLAIM YOUR FREE TRAIL</button>
+
+        <div class="condition">
+          <p class="terms">By clicking the button, you are agreeing to our <span class="tands">Terms and Services</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

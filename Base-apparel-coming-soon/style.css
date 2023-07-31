@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    width: 375px;
+    height: 250px;
+    background-image: url(./images/hero-mobile.jpg);    
+    background-repeat: no-repeat;
+
+}
+.main-content{
+    max-width: 95%;
+    min-height:400px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    align-self: flex-start;
+    width: 126px;
+    height: 26px;
+    background-image: url(./images/logo.svg);
+    background-size: cover;
+    margin: 20px 0px 20px 20px;
+    
+}
+.btn{
+    height: 50px;
+    width: 65px;
+    background-image: linear-gradient(to right,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    border-style: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px 5px hsl(0, 88%, 87%);
+}
+.btn:hover{
+    background-image: linear-gradient(hsl(0, 80%, 86%),hsl(0, 80%, 86%));
+    
+}
+.error{
+    visibility: hidden;
+}
+.email{
+    height: 48px;
+    border-radius: 30px;
+    width: 90%;
+    border-style: none;
+    padding-left: 20px;
+    font-size: 15px;
+    border: 1px solid rgba(65, 58, 58,.4) ;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+span{
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+    color:  hsl(0, 36%, 70%);
+}
+p{
+    max-width:321px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color:  hsl(0, 36%, 70%);
+}
+.input-div{
+    min-width: 90%;
+    height: 80px;
+    position: relative;
+
+}
+.btns{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.result{
+    margin:10px 0px 5px 25px ;
+    visibility: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.result-color{
+    visibility: visible;
+    font-size: 13px;
+    font-weight: 600;
+    color: hsl(0, 93%, 68%);
+}
+.error-vis{
+    visibility: visible;
+}
+.email-vis{
+    border: 1px solid hsl(0, 93%, 68%);
+}
+
+
+::placeholder {
+    color: hsl(0, 93%, 68%);
+    opacity: 0.6; 
+}
+  
+:-ms-input-placeholder {
+    color: hsl(0, 93%, 68%);
+    opacity: 0.6;
+}
+  
+::-ms-input-placeholder {
+    color: hsl(0, 93%, 68%);
+    opacity: 0.6;
+}
+
+
+@media (min-width:481px) {
+    body{
+        height: 100vh;
+
+    }
+    .main-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+    }
+    .hero{
+        width: 40%;
+        height: 800px;
+        background-image: url(./images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .logo{
+        width: 158px;
+        height: 33px;
+        position: absolute;
+        top: 10%;
+        left: 14%;
+    }
+    .main-content{
+        max-width: 475px;
+        height: 500px;
+        margin: 15px 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+    h1{
+        font-size: 4rem;
+        text-align: left;
+        line-height: 70px;
+        letter-spacing: 18px;
+    }
+    span{
+        font-size: 4rem;
+    }
+    p{
+        max-width: 457px;
+        text-align: left;
+        line-height: 23px;
+    }
+    .input-div{
+        width: 457px;
+    }
+    .btn{
+        width: 90px;
+    }
+}

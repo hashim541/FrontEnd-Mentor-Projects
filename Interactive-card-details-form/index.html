@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="top-img">
+      <div class="back-desktop">
+        <img src="./images/bg-main-desktop.png" alt="">
+      </div>
+      <div class="back-mobile">
+        <img src="./images/bg-main-mobile.png" alt="">
+      </div>
+
+      <div class="front-side">
+        <img class="logo" src="./images/card-logo.svg" alt="">
+        <div class="num-name">
+          <h2 class="number">0000 0000 0000 0000</h2>
+          <div class="name-date">
+            <p class="name">Jane Appleseed</p>
+            <p> <span class="month">00</span> / <span class="year">00</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="back-side">
+        <p class="cvc">000</p>
+      </div>
+    </div>
+
+    
+      
+      
+      
+    
+
+    <div class="main-content">
+      <div class="inner-content1">
+        <div class="input-div name-input">
+          <h4>CARDHOLDER NAME</h4>
+          <input type="text" id="name" placeholder="e.g. Jane Appleseed">
+          <p class="error-msg none">Can't be blank</p>
+        </div>
+
+        <div class="input-div cardnumber-input">
+          <h4>CARD NUMBER</h4>
+          <input type="number" id="number" placeholder="e.g. 1234567891230000">
+          <p class="error-msg none">Can't be blank</p>
+        </div>
+
+        <div class="input-div m-y-c">
+          <div class="date-input input-div">
+            <h4>EXP. DATE (MM/YY)</h4>
+            <div class="mm-yy">
+              <div class="month">
+                <input type="number" id="month" placeholder="MM">
+                <p class="error-msg none">Can't be blank</p>
+              </div>
+              <div class="year">
+                <input type="number" id="year" placeholder="YY">
+                <p class="error-msg none">Can't be blank</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class=" input-div cvc-input">
+            <h4>CVC</h4>
+            <input type="number" id="cvc" placeholder="e.g. 123">
+            <p class="error-msg none">Can't be blank</p>
+          </div>
+        </div>
+
+        <button class="btn btn1">Confirm</button>
+      </div>
+
+
+      <div class="inner-content2 none">
+        <img class="imgss" src="./images/icon-complete.svg" alt="">
+        <h1>THANK YOU!</h1>
+        <p>We've added your card details</p>
+        <button class="btn btn2">Continue</button>
+      </div>
+    </div>
+
+  </div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

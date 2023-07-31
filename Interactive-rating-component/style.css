@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+.attribution { font-size: 11px; color:white; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    height: 50%;
+    width: 50vh;
+    position: absolute;
+    background-color:hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.container2{
+    height: 50%;
+    width: 50vh;
+    background-color:hsl(216, 12%, 8%);
+    position: absolute;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+.star{
+    margin-left: 20px;
+}
+
+h1{
+    color: white;
+}
+p{
+    width: 90%;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    text-align:center;
+}
+.mh1{
+    margin-left: 20px;
+    width: 90%;
+    color: white;
+}
+.mp{
+    margin-left: 20px;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    width: 90%;
+}
+.star,.btn{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(213, 19%, 18%);
+    border-radius: 50%;
+    color: hsl(216, 12%, 54%);
+    border-style: none;
+}
+.btn:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.btns{
+    margin-left: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit{
+    margin-left: 20px;
+    height: 10%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 90%;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border-style: none;
+    border-radius: 50px;
+}
+.onClick{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.submit:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.visible{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+.thank-icon{
+    width: 162px;
+    height: 108px;
+}
+.show{
+    height: 30px;
+    text-align: center;
+    background-color:hsl(213, 19%, 18%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    border-radius: 5px;
+}
+.showp{
+    
+    color:hsl(25, 97%, 53%) ;
+}

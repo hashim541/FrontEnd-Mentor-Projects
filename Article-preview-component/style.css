@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+.main-container{
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 3px hsl(208, 67%, 92%);
+}
+.content{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content1{
+    margin-top: 20px;
+    width: 85%;
+    margin-bottom: 20px;
+}
+.content2{
+    width: 85%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    margin-bottom: 20px;
+}
+h3,.h5{
+    color:hsl(217, 19%, 35%);
+}
+.h5{
+    padding-bottom: 5px;
+}
+p{
+    font-size: 13px;
+    color:hsl(214, 17%, 51%);
+    line-height: 20px;
+}
+.profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-right: 15px;
+}
+.btn{
+    width: 35px;
+    height: 35px;
+    background-color: hsl(210, 46%, 95%);
+    border-style: none;
+    border-radius: 50%;
+}
+.share{
+    font-weight: 100;
+    font-size: 14px;
+    color:hsl(212, 23%, 69%) ;
+}
+@media(max-width:605px){
+    .main-container{
+        width: 300px;
+        min-height: 60vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .imgs{
+        width: 100%;
+        max-height: 200px;
+        
+    }
+    .img-table{
+        width: 100%;
+        max-height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    .btn2{
+        background-color: hsl(214, 17%, 51%);
+    }
+    .click-box{
+        width: 1px;
+        height: 70px;
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: .1s;
+    }
+    .share2 path{
+        fill: white;
+    }
+    .check-box-toggle{
+        width: 100%;
+        transition: .15s;
+        visibility: visible;
+    }
+    .check-box-toggle2{
+        width: 1px;
+        height: 70px;
+        transition: .2s;
+        visibility: hidden;
+    }
+    .click-box1{
+        
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logos{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .desktop{
+        display: none;
+    }
+}
+@media(min-width:605px){
+    .main-container{
+        width: 752px;
+        min-height: 300px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .imgs{
+        width:300px;
+        height: 300px;
+        background-position: center left;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+    }
+    .img-table{
+        width: 350px;
+        height: 350px;
+
+        
+    }
+    .content{
+        max-width: 452px;
+        height: 300px;
+    }
+    .content1{
+        position: relative;
+    }
+    .click-box{
+        display: none;
+        width: 1px;
+        height: 1px;
+    }
+    .click-box1{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logos{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .desktop{
+        width: 285px;
+        height:1px ;
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        top: 90%;
+        left: 352px;
+        transform: translate(-50%,-50%);
+        transition: .1s;
+        visibility: hidden;
+    }
+    .desktop-toggle{
+        height: 50px;
+        visibility: visible;
+        transition: .2s;
+    }
+    .down{
+        width: 1px;
+        height: 1px;
+        rotate: 45deg;
+        background-color: hsl(217, 19%, 35%);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        visibility: hidden;
+    }
+    .visible{
+        height: 30px;
+        width: 30px;
+        transition: .2s;
+        visibility: visible;
+    }
+}
